@@ -8,12 +8,15 @@ function consommaion (price, quantity) {
   }
 }
 
+let tableau = [43, 58, 20, 5, 63, 83, 410, 10, 25];
+
+let numberguess = 63;
 
 function binarySearch (array, numberToGuess) {
   
-  let start = 0;
-  let max = array.length - 1;
-  let middle = Math.floor((start + max)/2);
+  let start = 0,
+  max = array.length - 1,
+  middle = Math.floor((start + max)/2);
 
   while (start <= max) {
     let guess = array[middle];
@@ -28,3 +31,7 @@ function binarySearch (array, numberToGuess) {
   }
   return null;
 }
+
+const result = binarySearch (tableau, numberguess);
+
+console.log(result);
