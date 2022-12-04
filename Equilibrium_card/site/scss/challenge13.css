@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  width: 250px;
+  height: 450px;
+  font-size: 0.9rem;
+  background-color: hsl(216deg, 50%, 16%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.main .card .image {
+  width: 90%;
+  padding: 0.8rem 0;
+}
+.main .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.main .card .description {
+  width: 90%;
+  height: 90%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main .card .description h5 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 500;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.main .card .description P {
+  color: hsl(215deg, 32%, 27%);
+}
+.main .card .description .option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .card .description .option img {
+  transform: translateY(20%);
+}
+.main .card .description .option .price {
+  color: hsl(178deg, 100%, 50%);
+}
+.main .card .description .option p {
+  color: hsl(215deg, 32%, 27%);
+}
+.main .card .description .avatar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  padding-top: 0.6rem;
+}
+.main .card .description .avatar img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.main .card .description .avatar span {
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=challenge13.css.map */

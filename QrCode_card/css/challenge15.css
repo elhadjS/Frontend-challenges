@@ -1,0 +1,79 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    /*taille de la police générale*/
+    --font-size:15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--font-size);
+    font-family: "Poppins Medium", sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.card{
+    width: 290px;
+    height: 450px;
+    border-radius: 1rem;
+    align-content: space-around;
+    box-shadow: 0 2px 17px 0;
+}
+
+.card .qr_image{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: url("image-qr-code.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.card h3{
+    font-size: 1rem;
+    color: var(--Dark-blue);
+}
+
+.card_detail{
+    height: 50%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card p{
+    font-size: .7rem;
+    color: var(--Grayish-blue);
+    text-align: center;
+}
+
+@media  screen and (max-width: 375px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0;
+    }
+}
+
+
+

@@ -1,0 +1,197 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 12px;
+  font-family: Fira code, sans-serif;
+  background-color: #f8ebf9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 0.8rem;
+}
+header svg:first-of-type {
+  height: 2rem;
+}
+header .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .back svg {
+  height: 0.8rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem;
+  background-color: #fff;
+}
+header .back p {
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  font-size: 0.6rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .left {
+  width: 40%;
+}
+main .left h3 {
+  font-size: 1rem;
+}
+main .left .details p {
+  margin: 0.8rem 0;
+}
+main .left .details span {
+  font-weight: bold;
+}
+main .right {
+  width: 30%;
+  height: 400px;
+  padding: 0 3rem;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+main .right .souscription h3 {
+  margin-bottom: 0.8rem;
+}
+main .right .souscription form {
+  margin: 1rem 0;
+}
+main .right .souscription form label {
+  font-weight: bold;
+}
+main .right .souscription .checkbox_text {
+  display: inline;
+  padding: 0 0 0 0.2rem;
+}
+main .right input[type=email], main .right input[type=text], main .right input[type=password] {
+  display: block;
+  outline: none;
+  padding: 0.4rem 2rem;
+  width: 100%;
+}
+main .right input::-webkit-input-placeholder {
+  font-family: Fira Code, sans-serif;
+  font-size: 0.6rem;
+}
+main .right input::-moz-placeholder {
+  font-family: Fira Code, sans-serif;
+  font-size: 0.6rem;
+}
+main .right input:-ms-input-placeholder {
+  font-family: Fira Code, sans-serif;
+  font-size: 0.6rem;
+}
+main .right input::-ms-input-placeholder {
+  font-family: Fira Code, sans-serif;
+  font-size: 0.6rem;
+}
+main .right input::placeholder {
+  font-family: Fira Code, sans-serif;
+  font-size: 0.6rem;
+}
+main .right button {
+  width: 100%;
+  padding: 0.6rem 0.1rem;
+  background-color: #885af0;
+  color: #fff;
+  font-family: Fira Code, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    min-width: 100vw;
+    font-size: 11px;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+  }
+  main {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .right {
+    width: 45%;
+    margin-left: 0.8rem;
+  }
+  button {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 725px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .left, main .right {
+    width: 70%;
+  }
+  main .right {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 465px) {
+  header p {
+    display: none;
+  }
+  main .right, main .left {
+    min-width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.9rem;
+  }
+  header .back {
+    height: 3.5rem;
+    width: 3.5rem;
+    padding-right: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=challenge16.css.map */

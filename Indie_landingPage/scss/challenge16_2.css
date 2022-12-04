@@ -1,0 +1,145 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-size: 13px;
+  font-family: Fira code, sans-serif;
+  margin: 0 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 80%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav__ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+header .nav__ul li:not(:first-of-type) {
+  margin-left: 0.7rem;
+}
+header .nav__ul--btn {
+  background-color: #4411ba;
+  padding: 0.6rem;
+  color: #fff;
+  font-weight: bold;
+}
+header .nav__ul--btn span {
+  font-weight: normal;
+}
+
+main {
+  width: 80%;
+}
+main section img {
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+main section.description {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.description .right {
+  width: 50%;
+}
+main section.description .right svg {
+  display: block;
+}
+main section.description .right p {
+  font-size: 0.7rem;
+  margin: 0.4rem 0;
+}
+main section.description .right button {
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-family: Fira Code, sans-serif;
+  background-color: #4411ba;
+}
+main .social_media {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .social_media .social_media--left {
+  width: 50%;
+}
+main .social_media img {
+  height: 90px;
+  padding-left: 2rem;
+}
+main .social_media p {
+  font-size: 0.7rem;
+  margin: 0.4rem 0;
+}
+main .social_media p a {
+  color: #4d13d1;
+  font-weight: bold;
+}
+main .sign_up {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sign_up--right {
+  padding-right: 2rem;
+}
+main .sign_up--right p {
+  font-size: 0.7rem;
+  margin: 0.4rem 0;
+}
+main .sign_up--right p a {
+  color: #4d13d1;
+  font-weight: bold;
+}
+
+footer {
+  width: 80%;
+}
+footer .list {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+footer .list ul {
+  height: 70%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+footer .list ul li:first-of-type {
+  font-weight: bold;
+}
+footer .list ul:first-of-type {
+  width: 25%;
+}
+footer p {
+  margin-top: 2rem;
+}/*# sourceMappingURL=challenge16_2.css.map */

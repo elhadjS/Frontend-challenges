@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/challenge9.css">
+    <title>Challenge9</title>
+</head>
+<body>
+    <div class="container">
+        <div class="radius_rectangle"></div>
+        <div class="phone_and_description">
+            <div class="phone">
+                <div class="phone_header">
+                    <div class="phone_information">
+                        <img src="../images/avatar.jpg" alt="avatar">
+                        <div class="informations">
+                            <h3>Samuel Green</h3>
+                            <p>Available to Walk </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_conversation">
+                    <p class="sms1">That sounds great. I’d be happy with that.</p>
+                    <p class="sms2">Could you send over some pictures of your dog, please?</p>
+                    <div class="dog_pics">
+                        <img src="../images/dog-image-1.jpg" alt="dog" style="width: 25px; height: 25px">
+                        <img src="../images/dog-image-2.jpg" alt="dog" style="width: 25px; height: 25px">
+                        <img src="../images/dog-image-3.jpg" alt="dog" style="width: 25px; height: 25px">
+                    </div>
+                    <p class="sms3">Here are a few pictures. She’s a happy girl!</p>
+                    <p class="sms4">Can you make it?</p>
+                    <p class="sms5"> She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                    <form action="get">
+                        <input type="radio" name="dog" id="dog1" >
+                        <label for="dog">30 minute walk <span>$29</span></label>
+                    </form>
+                    <form action="get">
+                        <input type="radio" name="dog" id="dog" >
+                        <label for="dog">1 hour walk <span>$49</span></label>
+                    </form>
+                </div>
+                <div class="footer">
+                    <input type="text" name="message" id="message" placeholder="Type a message">
+                </div>
+            </div>
+            <div class="description">
+                <h1>Simple booking</h1>
+                <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

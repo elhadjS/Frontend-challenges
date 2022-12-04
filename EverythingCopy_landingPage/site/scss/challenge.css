@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Poppins Medium", Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_one h1, .container_one h3, .container_one h4 {
+  font-weight: normal;
+}
+.container_one p {
+  color: hsl(201deg, 11%, 66%);
+}
+.container_one input {
+  cursor: pointer;
+}
+.container_one .header {
+  width: 500px;
+  height: 230px;
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.container_one .header img {
+  width: 90px;
+  height: 90px;
+  margin-top: 0.5%;
+}
+.container_one .header input {
+  margin: 5px;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 100rem;
+  font-size: 0.6rem;
+  color: white;
+}
+.container_one .header input:nth-child(1) {
+  background-color: hsl(171deg, 66%, 44%);
+}
+.container_one .header input:nth-child(2) {
+  background-color: hsl(233deg, 100%, 69%);
+}
+
+.main {
+  width: 100%;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+.main p {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.main p.first_p {
+  text-align: center;
+  padding: 0.7rem 0 1rem 0;
+}
+.main .main_header {
+  width: 500px;
+  text-align: center;
+}
+.main .main__product1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.main .main__product1 img {
+  width: 250px;
+  height: 240px;
+  margin: 0 4rem;
+}
+.main .main__product1 ul {
+  width: 45%;
+}
+.main .product__plus {
+  width: 550px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+.main .product__plus img {
+  width: 250px;
+  height: 240px;
+}
+.main .product__plus p {
+  font-size: 0.5rem;
+}
+
+.services_description {
+  width: 100%;
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.utils {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.utils .item {
+  height: 100px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.utils .item svg {
+  align-self: center;
+}
+
+.companies img {
+  height: 20px;
+  margin: 4.5rem;
+}
+
+.download {
+  width: 390px;
+  text-align: center;
+}
+.download input {
+  margin: 5px;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 100rem;
+  font-size: 0.6rem;
+  color: white;
+}
+.download input:nth-child(1) {
+  background-color: hsl(171deg, 66%, 44%);
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.6rem;
+  margin-top: 30px;
+  background-color: hsl(201deg, 11%, 66%);
+  color: hsl(210deg, 10%, 33%);
+}
+.footer ul {
+  width: 270px;
+  display: grid;
+  grid-template: 20px 20px/80px 80px 80px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo_entreprise {
+  width: 30px;
+  height: 30px;
+}
+.footer .images img {
+  width: 30px;
+  height: 30px;
+  padding: 0.4rem;
+}/*# sourceMappingURL=challenge.css.map */

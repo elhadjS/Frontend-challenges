@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+}
+
+.main{
+    width: 650px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .header{
+    font-size: .6rem;
+    text-align: center;
+}
+
+.main .header h1:nth-child(1), 
+.main .header p{
+    color: #a3a5ae;
+    font-size: .7rem;
+}
+
+.cards{
+    width: 100%;
+    height: 80%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards .card{
+    width: 180px;
+    height: 140px;
+    box-shadow: 1px 1px 14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card h3{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.card p{
+    font-size: .4rem;
+}
+
+#pic, #pic2, #pic3, #pic4{
+    width: 30px;
+    height: 30px;
+    align-self: flex-end;
+}
+
+.miniContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item1 , .item4{
+    position: relative;
+    top: 85px;
+    border-top: 2px solid;    
+}
+
+.item1{
+  border-top: 2px solid #ea5353;
+}
+
+.item2{
+    border-top: 2px solid #fcaf4a;
+}
+
+.item3{
+    border-top: 2px solid #549ef2;
+}
+
+.item4{
+    border-top: 2px solid #45d3d3;
+}
+
+
+@media screen and (max-width: 620px){
+
+    .item1, .item4{
+        position: static;
+    }
+
+    .cards{
+        height: 750px;
+        margin-top: 2rem;
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .miniContainer{
+        width: 80%;
+        flex-grow: 2;
+        gap: 0;
+        justify-content: space-around;
+        
+    }
+
+    .miniContainer .card.item2, 
+    .miniContainer .card.item3{
+        width: 100%;
+    }
+
+    .cards .card{
+        width: 80%;
+    }
+
+    .card p{
+        font-size: .8rem;
+    }
+
+    .card h3{
+        font-size: 1rem;
+    }
+}

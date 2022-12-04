@@ -1,0 +1,111 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Poppins Medium, sans-serif;
+  background-color: #013243;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/User Avatar 3.svg"), url("../../Assets/User Avatar 5.svg"), url("../../Assets/User Avatar 2.svg"), url("../../Assets/User Avatar 1.svg"), url("../../Assets/User Avatar 4.svg");
+  background-position: 2% 25%, 70% 10%, 90% 5%, 95% 45%, 85% 95%;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 80%;
+  height: 90vh;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+main {
+  color: white;
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main h1 {
+  font-size: 8rem;
+  color: #32f5c8;
+  letter-spacing: 0.7rem;
+}
+main p {
+  width: 45%;
+  margin: 2rem 0 1rem;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main button {
+  padding: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #32f5c8;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+@media screen and (max-width: 375px) {
+  main button {
+    width: 90%;
+  }
+}
+main button ~ p {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+main button ~ p img {
+  width: 25px;
+  margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 1008px) {
+  html {
+    background-position: 5% 25%, 60% 10%, 90% 5%, 95% 45%, 85% 95%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main h1 {
+    font-size: 8.5vw;
+  }
+}
+@media screen and (max-width: 685px) {
+  html {
+    background-position: 5% 25%, 65% 20%, 90% 5%, 95% 45%, 75% 95%;
+  }
+  main p {
+    width: 60%;
+  }
+  main button ~ p {
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    background-position: 2% 10%, 70% 25%, 90% 5%, 95% 45%, 55% 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    background-image: url("../../Assets/User Avatar 3.svg"), url("../../Assets/User Avatar 2.svg"), url("../../Assets/User Avatar 4.svg");
+    background-position: 2% 15%, 90% 5%, 95% 55%;
+  }
+  main p {
+    width: 95%;
+  }
+}/*# sourceMappingURL=challenge21.css.map */

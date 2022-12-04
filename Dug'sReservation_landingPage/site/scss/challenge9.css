@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins Medium", Helvetica, sans-serif;
+}
+
+.container {
+  width: 950px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  margin: 50px auto;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem;
+  position: relative;
+}
+.container .radius_rectangle {
+  width: 200px;
+  height: 95%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+}
+.container .phone_and_description {
+  height: 310px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container .phone_and_description .phone {
+  width: 175px;
+  height: 300px;
+  font-size: 0.4rem;
+  background-color: hsl(270deg, 20%, 96%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -60px;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 0.1rem 0.1rem 1rem 0;
+}
+.container .phone_and_description .phone_header {
+  margin-bottom: 0.1rem;
+}
+.container .phone_and_description .phone_information {
+  background-image: linear-gradient(to left, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  padding: 0.7rem 0.3rem 0.3rem;
+  border-radius: 15px 15px 5px 5px;
+  text-align: center;
+}
+.container .phone_and_description .phone_information::before {
+  content: "<";
+  padding-right: 0.8rem;
+}
+.container .phone_and_description .phone_information::after {
+  content: ":";
+}
+.container .phone_and_description .phone_information::before, .container .phone_and_description .phone_information::after {
+  font-size: 0.9rem;
+  color: white;
+  position: relative;
+  bottom: 5px;
+}
+.container .phone_and_description .phone_information .informations {
+  padding-right: 2rem;
+}
+.container .phone_and_description .phone_information .informations h3 {
+  color: white;
+  font-weight: normal;
+}
+.container .phone_and_description .phone_information .informations p {
+  color: hsl(270deg, 7%, 64%);
+}
+.container .phone_and_description .phone_information .dog_pics {
+  width: 100px;
+  height: 50px;
+}
+.container .phone_and_description .phone_information img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+.container .phone_and_description .phone_information .informations {
+  display: inline-block;
+}
+.container .phone_and_description .description {
+  width: 300px;
+}
+.container .description {
+  width: 450px;
+}
+.container .description h1 {
+  font-weight: normal;
+  color: hsl(271deg, 36%, 24%);
+}
+.container .description p {
+  color: hsl(270deg, 7%, 64%);
+  font-size: 0.55rem;
+}
+
+.phone_conversation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.phone_conversation .dog_pics {
+  align-self: flex-end;
+}
+.phone_conversation img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.phone_conversation p {
+  width: 95px;
+  padding: 0.2rem 0.7rem;
+  margin: 0.5px;
+  font-size: 0.3rem;
+  border-radius: 4px;
+  color: hsl(276deg, 55%, 52%);
+  background-color: hsl(206deg, 6%, 79%);
+}
+.phone_conversation .sms3, .phone_conversation .sms4 {
+  align-self: flex-end;
+  width: 80px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+input[type=text] {
+  font-size: 0.4rem;
+  width: 150px;
+  padding: 0.4rem;
+  border: none;
+  margin: 0.4rem;
+  border-radius: 15px;
+}
+
+form {
+  background-image: linear-gradient(to left, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  width: 120px;
+  padding: 3px 0 5px 8px;
+  margin: 0.01rem;
+  border-radius: 8px 8px 8px 0;
+  font-size: 0.4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  transform: translateY(10%);
+}
+form label {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 2px;
+}
+form span {
+  font-weight: bold;
+  font-size: 0.5rem;
+  display: block;
+}/*# sourceMappingURL=challenge9.css.map */

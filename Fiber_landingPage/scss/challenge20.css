@@ -1,0 +1,157 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 11px;
+  font-family: Fira Code, sans-serif;
+}
+
+body {
+  width: inherit;
+  height: inherit;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left h4 {
+  font-size: 1.5rem;
+}
+.left form {
+  display: flex;
+  flex-direction: column;
+}
+.left form input::-moz-placeholder {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: Fira Code, sans-serif;
+}
+.left form input:-ms-input-placeholder {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: Fira Code, sans-serif;
+}
+.left form input::placeholder {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: Fira Code, sans-serif;
+}
+.left a {
+  color: #591edf;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.9rem;
+}
+
+input:not([type=checkbox]) {
+  padding: 0.6rem 0;
+  width: 70%;
+}
+
+.terms {
+  display: flex;
+  align-self: flex-start;
+  width: 70%;
+}
+.terms a {
+  font-weight: bold;
+}
+
+.after-check {
+  padding-left: 0.8rem;
+}
+
+button {
+  width: 70%;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  background-color: #591edf;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button ~ p {
+  transform: translateX(10%);
+}
+
+.right {
+  width: 50%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #591edf;
+  color: white;
+  text-align: center;
+}
+.right h2 {
+  margin: 2rem 0;
+}
+.right .img {
+  height: 50%;
+  width: 80%;
+}
+.right .img {
+  background-image: url("Sign Up Image.png");
+  background-position: center;
+  background-size: cover;
+}
+.right .circles {
+  width: 20%;
+  height: 6%;
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.right .circles .circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 100%;
+}
+.right .circles .circle:not(:first-of-type) {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+  .right {
+    display: none;
+  }
+  .left {
+    align-items: stretch;
+  }
+  .left h4 {
+    font-size: 2rem;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+  }
+  .left input:not([type=checkbox]), button {
+    width: 100%;
+  }
+  button ~ p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=challenge20.css.map */
